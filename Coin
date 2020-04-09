@@ -1,0 +1,22 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ODeer
+{
+    class Coin
+    {
+        //Properties
+        public int Location { get; set; }
+        //Constructor
+        public Coin()
+        {
+
+        }
+        //Methods
+        public int AddToPoints(int score)
+        {
+           
+        }
+    }
+}
