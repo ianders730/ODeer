@@ -1,0 +1,27 @@
+using System;
+using System.Collections.Generic;
+using System.Text;
+
+namespace ODeer
+{
+    public class Car
+    {
+        //Properties
+        public Lives Damage { get; set; }
+        public int Speed { get; set; }
+        //Constructor
+        public Car()
+        {
+
+        }
+        //Methods
+        public void Display()
+        {
+
+        }
+        public void DriveBy()
+        {
+
+        }
+    }
+}
