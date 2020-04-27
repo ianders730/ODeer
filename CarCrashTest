@@ -1,0 +1,40 @@
+public void CarCrashTest()
+        {
+            if (DateTime.Now.Subtract(gameTime) > TimeSpan.FromMilliseconds(5000))
+            {
+                for (int k = 0; k < Cars.Count; k++)
+                {
+                    for (int i = 0; i < Cars.Count; i++)
+                    {
+                        if (!Cars[k].HitTest(Cars[i].Bounds))
+                        {
+                            if (Cars[k].LocationY == 75)
+                            {
+                                Cars[k].LocationY = 125;
+                                Cars[k].LocationX = Cars[k].LocationX + 20;
+                                Cars[i].LocationY = 75;
+                            }
+                            else if (Cars[k].LocationY == 125)
+                            {
+                                Cars[k].LocationY = 75;
+                                Cars[k].LocationX = Cars[k].LocationX + 20;
+                                Cars[i].LocationY = 125;
+                            }
+                            else if (Cars[k].LocationY == 275)
+                            {
+                                Cars[k].LocationY = 325;
+                                Cars[k].LocationX = Cars[k].LocationX + 20;
+                                Cars[i].LocationY = 275;
+                            }
+                            else if (Cars[k].LocationY == 325)
+                            {
+                                Cars[k].LocationY = 275;
+                                Cars[k].LocationX = Cars[k].LocationX + 20;
+                                Cars[i].LocationY = 325;
+                            }
+
+                        }
+                    }
+                }
+            }
+        }
